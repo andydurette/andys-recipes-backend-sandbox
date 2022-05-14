@@ -1,0 +1,38 @@
+{
+  "name": "andys-recipes-backend",
+  "version": "1.0.0",
+  "description": "I wanted to make myself a recipe site with aws tools such as aws cdk and amplify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andydurette/andys-recipes-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andydurette/andys-recipes-backend/issues"
+  },
+  "homepage": "https://github.com/andydurette/andys-recipes-backend#readme",
+  "devDependencies": {
+    "@types/node": "17.0.31",
+    "aws-cdk": "^2.23.0",
+    "aws-cdk-lib": "^2.24.1",
+    "constructs": "^10.0.130",
+    "esbuild": "^0.14.38",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@aws-amplify/auth": "^4.5.3",
+    "@types/aws-lambda": "^8.10.95",
+    "@types/uuid": "^8.3.4",
+    "aws-amplify": "^4.3.21",
+    "aws-sdk": "^2.1129.0",
+    "dotenv": "^16.0.1",
+    "uuid": "^8.3.2"
+  }
+}
