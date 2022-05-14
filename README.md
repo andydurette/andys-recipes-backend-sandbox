@@ -11,6 +11,7 @@ Features, check marks are done, crosses are features yet to be added
 - Authentication and Authorization, kept only to myself to avoid AWS costs. ✅
 - Ability to create recipes inside the app via a GUI✅
 - Ability to update recipes inside the app via a GUI ❌
+- Ability to delete recipes inside the app via a GUI ❌
 - Add images to display with recipes from an S3 bucket. ✅
 - Proper Integration of typescript into code ❌
 - Adding tests for functionalities ❌
