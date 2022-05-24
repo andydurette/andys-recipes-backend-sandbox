@@ -37,7 +37,8 @@ export class RecipeStack extends Stack {
             this.api,
             this.recipesPhotosBucket.bucketArn + '/*'
             );
-        new WebAppDeployment(this, this.suffix)
+        // Use if you want aws to host your application
+        // new WebAppDeployment(this, this.suffix)
 
         const optionsWithAuthorizer: MethodOptions = {
             authorizationType: AuthorizationType.COGNITO,
