@@ -1,4 +1,4 @@
-# CDK Section of AWS CDK No Story Recipes Site
+# Backend CDK Section of AWS CDK No Story Recipes Site
 
 I have always wanted to have my own personal recipe site where there isn't stories or talks of peoples lives just the recipes themselves simplified down for an amateur cook like myself.
 
