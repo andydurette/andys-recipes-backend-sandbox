@@ -16,7 +16,7 @@ Features, check marks are done, crosses are features yet to be added or implemen
 - Proper Integration of typescript into code ❌
 - Adding tests for functionalities ❌
 
-Live View: https://nostoryrecipes.netlify.app
+Live View: https://nostoryrecipes.netlify.app                            
 View Frontend Repo: https://github.com/andydurette/andys-recipes-frontend
 
 ![markdown-preview-image](assets/markdown-preview-image.jpg)
