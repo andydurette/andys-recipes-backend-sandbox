@@ -1,0 +1,49 @@
+type Recipe @aws_api_key @aws_cognito_user_pools {
+  id: ID!
+  name: String!
+  description: String!
+  directions: String!
+  cuisine: String!
+  ingredients: [String]! 
+}
+
+input RecipeInput {
+  id: ID!
+  name: String!
+  description: String!
+  directions: String!
+  cuisine: String!
+  ingredients: [String]! 
+}
+
+input UpdateRecipeInput {
+  id: ID!
+  name: String!
+  description: String!
+  directions: String!
+  cuisine: String!
+  ingredients: [String]!
+}
+
+type Query {
+  getRecipeById(recipeId: ID!): Recipe
+    @aws_api_key @aws_cognito_user_pools
+  listRecipes: [Recipe]
+    @aws_api_key @aws_cognito_user_pools
+  recipesByCuisine(cuisine: String!): [Recipe]
+    @aws_api_key @aws_cognito_user_pools
+}
+
+type Mutation {
+  createRecipe(recipe: RecipeInput!): Recipe
+    @aws_cognito_user_pools(cognito_groups: ["Admin"])
+  deleteRecipe(recipeId: ID!): ID
+    @aws_cognito_user_pools(cognito_groups: ["Admin"])
+  updateRecipe(recipe: UpdateRecipeInput!): Recipe
+    @aws_cognito_user_pools(cognito_groups: ["Admin"])
+}
+
+type Subscription {
+  onCreateRecipe: Recipe
+    @aws_subscribe(mutations: ["createRecipe"])
+}
