@@ -5,6 +5,7 @@ type Recipe @aws_api_key @aws_cognito_user_pools {
   directions: String!
   cuisine: String!
   ingredients: [String]! 
+  photoURL: String
 }
 
 input RecipeInput {
@@ -14,6 +15,7 @@ input RecipeInput {
   directions: String!
   cuisine: String!
   ingredients: [String]! 
+  photoURL: String
 }
 
 input UpdateRecipeInput {
@@ -23,6 +25,7 @@ input UpdateRecipeInput {
   directions: String!
   cuisine: String!
   ingredients: [String]!
+  photoURL: String
 }
 
 type Query {

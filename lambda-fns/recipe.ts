@@ -5,7 +5,7 @@ type Recipe = {
     ingredients: [string];
     description: string,
     directions: string;
-    // photoURL: string;
+    photoURL: string;
   }
 
 
